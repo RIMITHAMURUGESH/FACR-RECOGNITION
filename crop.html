@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Branch Popup Menu Example</title>
+<style>
+   
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.popup-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.popup-content a:hover {
+  background-color: #ddd;
+}
+
+.popup:hover .popup-content {
+  display: block;}
+  .body
+  {
+    background-image:url(man.avif);
+  }
+
+</style>
+</head>
+<body class="body" >
+
+<div class="popup">
+  <button class="popup-btn">Crop Connect</button>
+  <div class="popup-content">
+    <ul>
+      <li><a href="groceries.html">Groceries</a></li>
+      <li>
+        <a href="#">Crops</a>
+        <ul>
+          <li><a href="groceries.html">Tomato</a></li>
+          <li><a href="groceries.html">Potato</a></li>
+          <li><a href="groceries.html">Onion</a></li>
+          <li><a href="groceries.html">Paddy</a></li>
+        </ul>
+      </li>
+      <li>
+      <a href="#">Oils</a>
+      <ul>
+        <li><a href="groceries.html">Groundnut oil</a></li>
+        <li><a href="groceries.html">Mustard oil</a></li>
+      </ul>
+    </li>
+      
+
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

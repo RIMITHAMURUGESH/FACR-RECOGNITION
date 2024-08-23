@@ -1,0 +1,88 @@
+body {
+	background: linear-gradient(45deg, #00bfff, #0099ff, #191970, #4f4f9b, #8080b0, #bdbdbd, #f2f2f2);
+	background-size: 1600% 1600%;
+	animation: Gradient 15s ease infinite;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 3rem;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 20px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+form {
+	margin-bottom: 20px;
+	width: 300px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #555;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+#login-button {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+.links {
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #007bff;
+	margin-right: 10px;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #0056b3;
+}
+
+@keyframes Gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}

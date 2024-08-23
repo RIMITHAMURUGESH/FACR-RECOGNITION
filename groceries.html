@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Branch Popup Menu Example</title>
+<style>
+    .body
+    {
+        background-image:url(man.avif);
+    }
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.popup-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.popup-content a:hover {
+  background-color: #ddd;
+}
+
+.popup:hover .popup-content {
+  display: block;
+}
+</style>
+</head>
+<body class="body">
+
+<div class="popup">
+  <button class="popup-btn">Location</button>
+  <div class="popup-content">
+    <ul>
+      <li><a href="farmer.html">Erode</a></li>
+      <li>
+        <a href="farmer.html">Namakkal</a>
+       
+      </li>
+      <li><a href="farmer.html">Karur</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
